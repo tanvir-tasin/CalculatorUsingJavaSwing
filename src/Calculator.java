@@ -24,7 +24,7 @@ class Frame extends JFrame implements ActionListener {
         frame=new JFrame("Calculator");
 
         frame.setSize(380,480);
-        frame.getContentPane().setBackground(new Color(0xD923D1DB, true));
+        frame.getContentPane().setBackground(new Color(0xEB54A6CC, true));
         frame.setResizable(false);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,7 +79,7 @@ delbtn.setBounds(75,380,90,40);
         panel.setBounds(40,70,280,300);
         panel.setVisible(true);
         panel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        panel.setLayout(new GridLayout(4,4,5,5));
+        panel.setLayout(new GridLayout(4,4,5,7));
         panel.add(numberButton[7]);
         panel.add(numberButton[8]);
         panel.add(numberButton[9]);
@@ -107,7 +107,7 @@ delbtn.setBounds(75,380,90,40);
         frame.add(clrbtn);
         clrbtn.setFocusable(false);
         panel.setBackground(Color.cyan);
-
+frame.setLocation(400,100);
         frame.repaint();
         frame.setVisible(true);
 
